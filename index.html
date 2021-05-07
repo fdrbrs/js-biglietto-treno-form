@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto Treno</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div id="form" class="container">
+        <div id="form_input_box">
+            <div class="form_input">
+                <div>Nome Cognome</div>
+                <input type="text" id="nome_cognome">
+            </div>
+            <div class="form_input">
+                <div>Km da percorrere</div>
+                <input type="number" id="km">
+            </div>
+            <div class="form_input">
+                Fascia d'età
+                <select name="eta" id="fascia_eta">
+                    <option value="minorenne">minorenne</option>
+                    <option value="adulto">adulto</option>
+                    <option value="over65">over 65</option>
+                </select>
+            </div>
+        </div>
+        <div id="form_btn_box">
+            <button id="genera">Genera</button>
+            <button id="annulla">Annulla</button>
+        </div>
+    </div>
+
+    <h1>IL TUO BIGLIETTO</h1>
+    <div id="biglietto" class="container">
+        <div id="biglietto_testo">DETTAGLIO PASSEGGERI</div>
+        <div id="biglietto_dati">
+            <div id="passeggero_box">
+                <div>NOME PASSEGGERO</div>
+                <div id="nome_passeggero"></div>
+            </div>
+            <div id="offerta_box">
+                <div>Offerta</div>
+                <div id="offerta"></div>
+            </div>
+            <div id="carrozza_box">
+                <div>carrozza</div>
+                <div id="carrozza"></div>
+            </div>
+            <div id="codice_cp_box">
+                <div>Codice CP</div>
+                <div id="codice"></div>
+            </div>
+            <div id="costo_box">
+                <div>Costo Biglietto</div>
+                <div id="costo"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
