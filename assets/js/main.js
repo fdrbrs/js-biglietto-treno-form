@@ -49,4 +49,22 @@ document.getElementById('genera').addEventListener('click', function(){
     var priceRounded = prezzo.toFixed(2);
 
     document.getElementById('costo').innerHTML = priceRounded + ' €';
+
 })
+//annulla pulisce form
+
+document.getElementById('annulla').addEventListener('click', function(){
+    document.getElementById('form_input_box').reset();
+    document.getElementById('costo').innerHTML = '';
+    document.getElementById('codice').innerHTML = '';
+    document.getElementById('carrozza').innerHTML = '';
+    document.getElementById('offerta').innerHTML = '';
+    document.getElementById('nome_passeggero').innerHTML = '';
+})
+
+
+
+//da fare:
+    
+    //-genera non clickabile fino a che non è clickato annulla
+    //-css
